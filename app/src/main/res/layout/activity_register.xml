@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/register"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:shadowColor="@color/colorPrimary"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="590dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:textColor="@android:color/white"
+        android:text="Register Form"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColorHint="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/newUserName_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="450dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:drawableStart="@drawable/ic_name"
+        android:textColorHint="@android:color/white"
+        android:drawablePadding="9dp"
+        android:hint="your Name"
+        />
+    <EditText
+        android:id="@+id/newUserPhone_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="400dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_phone"
+        android:textColorHint="@android:color/white"
+        android:hint="phoneNumber"
+        android:drawablePadding="9dp"
+        />
+
+    <EditText
+        android:id="@+id/newUserPass_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="350dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:drawableStart="@drawable/ic_password"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:drawablePadding="9dp"/>
+    <EditText
+        android:id="@+id/ConfirmUserPass_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_password"
+        android:textColorHint="@android:color/white"
+        android:hint="Confirm password"
+        android:drawablePadding="9dp"/>
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/buttons"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="23sp" />
+
+
+</RelativeLayout>

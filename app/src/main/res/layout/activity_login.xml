@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login"
+    android:layout_gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="639dp"
+        android:gravity="center"
+        android:text="Login Form"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="30sp" />
+
+    <EditText
+       android:id="@+id/userPhone_ET"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginStart="48dp"
+       android:layout_marginEnd="41dp"
+       android:layout_marginBottom="434dp"
+       android:drawableStart="@drawable/ic_phone"
+       android:drawablePadding="9dp"
+       android:hint="phoneNumber"
+       android:inputType="number"
+       android:padding="10dp"
+       android:textColorHint="@android:color/white" />
+
+
+    <EditText
+
+        android:id="@+id/userPass_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="341dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="9dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/login_btn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="287dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="207dp"
+        android:background="@drawable/buttun_res"
+        android:text="checking account"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+
+</RelativeLayout>

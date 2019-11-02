@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".packageOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:id="@+id/orders"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:paddingStart="20dp"
+                        android:layout_height="290dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                            android:textColor="@color/texts"
+                            android:id="@+id/myOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="myOrder"
+                            android:textSize="25sp"
+                            />
+
+                        <TextView
+                            android:textColor="@color/texts"
+                            android:id="@+id/myTotalOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25sp"
+                            />
+
+
+                        </LinearLayout>
+                    </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+        <EditText
+                        android:padding="10dp"
+                        android:id="@+id/adrress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/ordered"
+                        android:layout_marginBottom="40dp"
+                        android:hint="@string/adrees" />
+                    <EditText
+                        android:padding="10dp"
+                        android:id="@+id/notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/ordered"
+                        android:layout_marginBottom="2dp"
+                        android:hint="اضف تعليق علي الاوردر" />
+
+                    <Button
+                        android:padding="5dp"
+                        android:background="@drawable/buttons"
+                        android:textColor="@color/texts"
+                        android:id="@+id/ordered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:text="order Now" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

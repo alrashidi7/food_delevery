@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".secandActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+   >
+
+<RelativeLayout
+    android:id="@+id/_1"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/res_1"
+                android:padding="15dp"
+                android:background="@drawable/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/image_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/image" />
+                <TextView
+
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:text="@string/time_work_mashi"
+                    android:id="@+id/time_work_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_res"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:text="جاري التاكد من حاله المطعم حاليا"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:id="@+id/opening"
+                    android:layout_below="@id/time_work_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/opening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginEnd="10dp"
+                        android:numStars="5"
+
+                        android:rating="2"
+                        android:stepSize="0.5"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/rating_tx"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="-20dp"
+                        android:textAlignment="center"
+                        android:text="(0)"
+                        android:textSize="30sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+
+            </LinearLayout>
+            </RelativeLayout>
+
+    <ImageView
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+        android:gravity="center"
+        android:id="@+id/mashi"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="135dp"
+        android:layout_below="@+id/res_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttun_res"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>
+    <!--end first restourant-->
+    <!--start in secand restourant-->
+
+    <RelativeLayout android:layout_below="@id/_1"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/res_2"
+            android:padding="15dp"
+            android:background="@drawable/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_res2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/image" />
+            <TextView
+
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:text="@string/time_work_mashi"
+                android:id="@+id/time_work_res2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_res2"/>
+            <TextView
+                android:text="..."
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:id="@+id/opening_res2"
+                android:layout_below="@id/time_work_res2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/opening_res2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/rating_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginEnd="10dp"
+                    android:numStars="5"
+
+                    android:rating="2"
+                    android:stepSize="0.5"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/rating_tx2"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="-20dp"
+                    android:textAlignment="center"
+                    android:text="(0)"
+                    android:textSize="30sp"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+            android:gravity="center"
+            android:id="@+id/rosto"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="135dp"
+            android:layout_below="@+id/res_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttun_res"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

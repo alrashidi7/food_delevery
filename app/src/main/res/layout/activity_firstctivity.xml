@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".firstctivity">
+
+    <Button
+        android:id="@+id/offers_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/buttons"
+        android:text="@string/ofeers_list"
+        android:textColor="@android:color/white"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/restourants_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/buttons"
+        android:text="@string/restourant_list"
+        android:textColor="@android:color/white"
+        android:textSize="23sp" />
+
+</RelativeLayout>
